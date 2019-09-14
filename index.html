@@ -9,12 +9,12 @@ function fna() {
   b += 1
 }
 function fnb() {
-  if (a>1000) {c++
+  if (a>1000) {c+=0.1
                a-=1000
               }
 }
 setInterval(()=>{
   a+=b
-  b += c/10
-  document.getElementById('a').innerHTML = a/10 + ' ' + b + ' per second ' + c + ' per second^2'},100)
+  b += c
+  document.getElementById('a').innerHTML = Math.round(a/10) + ' ,' + Math.round(b) + ' per second, ' + Math.round(c) + ' per second^2'},100)
 </script>
