@@ -3,19 +3,19 @@
 <button type="button" onclick="fna()">number go up faster</button>
 <button type="button" onclick="fnb()">number go up fasterer(cost:100)</button>
 <script>
-b=1
-a=0
-c=0
+b=new Decimal(1)
+a=new Decimal()
+c=new Decimal()
 function fna() {
-  b += 1
+  b=b.add(new Decimal(1))
 }
 function fnb() {
-  if (a>1000) {c+=0.1
-               a-=1000
+  if (a.gt(1000)) {c=c.add(0.1)
+               a=a.sub(1000)
               }
 }
 setInterval(()=>{
-  a+=b
-  b += c/10
-  document.getElementById('a').innerHTML = Math.round(a/10) + ' ,' + Math.round(b) + ' per second, ' + Math.round(c) + ' per second^2'},100)
+  a=a.add(b.pow(a.pow(0.01)))
+  b=b.add(c.pow(a.pow(0.001)).div(10))
+  document.getElementById('a').innerHTML = a.m+"e"+a.e + ' ,' + b.m+"e"+b.e + ' per second, ' + c.m+"e"+c.e + ' per second^2'},100)
 </script>
