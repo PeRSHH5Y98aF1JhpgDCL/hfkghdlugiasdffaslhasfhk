@@ -1,9 +1,19 @@
 <p id="a">0</p>
-<button type="button" onclick="a()">number go up faster</button>
+<button type="button" onclick="fna()">number go up faster</button>
+<button type="button" onclick="fnb()">number go up fasterer(cost:100)</button>
 <script>
 b=1
-function a() {
+a=0
+function fna() {
   b += 1
 }
-setInterval(()=>{document.getElementById('a').innerHTML = parseInt(document.getElementById('a').innerHTML)+b},1000)
+function fnb() {
+  if (a>1000) {c++
+               a-=1000
+              }
+}
+setInterval(()=>{
+  a+=b
+  b += c/10
+  document.getElementById('a').innerHTML = a/10 + ' ' + b + ' per second ' + c + ' per second^2'},100)
 </script>
