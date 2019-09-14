@@ -1,4 +1,9 @@
 <p id="a">0</p>
+<button type="button" onclick="a()">number go up faster</button>
 <script>
-setInterval(()=>{document.getElementById('a').innerHTML = parseInt(document.getElementById('a').innerHTML)+1},1000)
+b=1
+function a() {
+  b += 1
+}
+setInterval(()=>{document.getElementById('a').innerHTML = parseInt(document.getElementById('a').innerHTML)+b},1000)
 </script>
