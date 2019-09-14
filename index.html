@@ -17,5 +17,5 @@ function fnb() {
 setInterval(()=>{
   a=a.add(b.pow(a.pow(0.01)))
   b=b.add(c.pow(a.pow(0.001)).div(10))
-  document.getElementById('a').innerHTML = Math.round(a.m*10)/10+"e"+a.e + ' ,' + Math.round(b.m*10)/10+"e"+b.e + ' per second, ' + Math.round(c.m*10)/10+"e"+c.e + ' per second^2'},100)
+  document.getElementById('a').innerHTML = Math.round(a.m*10)/10+"e"+a.e + ' ,' + Math.round(b.pow(a.pow(0.01)).m*10)/10+"e"+b.pow(a.pow(0.01)).e + ' per second, ' + Math.round(c.pow(a.pow(0.001).m*10)/10+"e"+c.pow(a.pow(0.001).e + ' per second^2'},100)
 </script>
