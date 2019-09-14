@@ -15,7 +15,7 @@ function fnb() {
               }
 }
 setInterval(()=>{
-  a=a.add(b.mul(a.log(10000)))
-  b=b.add(c.mul(a.log(10000)).div(10))
-  document.getElementById('a').innerHTML = Math.round(a.m*10)/10+"e"+a.e + ' ,' + Math.round(b.mul(a.log(10000)).m*10)/10+"e"+b.mul(a.log(10000)).e + ' per second, ' + Math.round(c.mul(a.log(10000)).m*10)/10+"e"+c.pow(a.mul(10000)).e + ' per second^2'},100)
+  a=a.add(b.mul(a.log(10000).add(1)))
+  b=b.add(c.mul(a.log(10000).add(1)).div(10))
+  document.getElementById('a').innerHTML = Math.round(a.m*10)/10+"e"+a.e + ' ,' + Math.round(b.mul(a.log(10000).add(1)).m*10)/10+"e"+b.mul(a.log(10000).add(1)).e + ' per second, ' + Math.round(c.mul(a.log(10000).add(1)).m*10)/10+"e"+c.pow(a.mul(10000).add(1)).e + ' per second^2'},100)
 </script>
